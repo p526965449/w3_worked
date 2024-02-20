@@ -1,0 +1,22 @@
+<h1><%= @Place["name"] %></h1>
+
+# <h2><%= @company["city"] %>, <%= @company["state"] %></h2>
+
+# <h3>Contacts</h3>
+
+<ul>
+  <% for place in @places %>
+    <li>
+      <%= place["name"] %>
+      # <%= contact["last_name"] %>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/places/new">New place</a>
+</p>
+
+# <p>
+#   <a href="/places">Back to All Place</a>
+# </p>
