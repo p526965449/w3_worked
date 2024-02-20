@@ -1,7 +1,10 @@
 class TravelController < ApplicationController
 
   def index
-    render :template => "travel/index"
+  
+  @places = Place.all
+
+
   end
 
 end
