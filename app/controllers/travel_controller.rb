@@ -25,7 +25,7 @@ class TravelController < ApplicationController
     # save Company row
     @Place.save
     # redirect user
-    redirect_to "/places"
+    redirect_to "/travel"
   end
    
 end
